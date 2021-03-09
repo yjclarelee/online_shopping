@@ -28,7 +28,40 @@ function renderHTML(data, type = null, color = null){
     })
 }
 
+function setHTML(ulElem, elem){
+    const liElem = document.createElement('li');
+    
+    let imgType;
+    if(elem.type == 'tshirt') imgType = 't';
+    else if(elem.type == 'skirt') imgType = 's';
+    else imgType = 'p';
 
+    let liHTML = `
+    <img src="./assets/img/${elem.color}_${imgType}.png" class="clothes list-img" alt="${elem.color} ${elem.type}">
+    <span>${elem.gender},  ${elem.size} size</span>`
+
+    liElem.innerHTML = liHTML;
+    ulElem.appendChild(liElem);
+}
+
+function detectClick(data){
+    const header = document.querySelector('header');
+    header.addEventListener('click', function(event){
+        const className = event.target.className;
+        if(className == 'home'){
+            initializePage();
+        }
+        else if(className.includes('clothes')){
+            clearUlHTML();
+            renderHTML(data, event.target.classList[1]);
+        }
+        else if(className.includes('color')){
+            clearUlHTML();
+            data.filter()
+            renderHTML(data, null, event.target.innerHTML.toLowerCase());
+        }
+    })
+}
 
 render();
 

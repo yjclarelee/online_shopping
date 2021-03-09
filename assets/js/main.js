@@ -7,7 +7,7 @@ function render(){
 }
 
 async function getData(){
-    const fetchedData = await fetch('/assets/data/data.json');
+    const fetchedData = await fetch('./online_shopping/assets/data/data.json');
     const jsonData = await fetchedData.json();
     return jsonData.items;
 }

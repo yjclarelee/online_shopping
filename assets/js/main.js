@@ -57,7 +57,6 @@ function detectClick(data){
         }
         else if(className.includes('color')){
             clearUlHTML();
-            data.filter()
             renderHTML(data, null, event.target.innerHTML.toLowerCase());
         }
     })

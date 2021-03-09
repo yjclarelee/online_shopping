@@ -1,0 +1,40 @@
+{
+    "items":[
+        {
+            "type": "tshirt", 
+            "gender": "female", 
+            "size": "large",
+            "color": "blue"
+        },
+        {
+            "type": "skirt", 
+            "gender": "female", 
+            "size": "small",
+            "color": "pink"
+        },
+        {
+            "type": "pants", 
+            "gender": "female", 
+            "size": "medium",
+            "color": "blue"
+        },
+        {
+            "type": "tshirt", 
+            "gender": "male", 
+            "size": "large",
+            "color": "pink"
+        },
+        {
+            "type": "pants", 
+            "gender": "male", 
+            "size": "small",
+            "color": "blue"
+        },
+        {
+            "type": "tshirt", 
+            "gender": "male", 
+            "size": "medium",
+            "color": "yellow"
+        }
+    ]
+}

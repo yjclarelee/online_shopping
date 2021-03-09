@@ -1,0 +1,46 @@
+:root {
+  /* color */
+  --color-black: #3f454d;
+  --color-white: #ffffff;
+  --color-blue: #3b88c3;
+  --color-yellow: #fbbe28;
+  --color-pink: #fd7f84;
+  --color-light-grey: #dfdfdf;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Design */
+body{
+  background-color: var(--color-black);
+  height: 100vh;
+}
+
+button{
+  background-color: transparent;
+  border: none;
+}
+
+button:focus{
+  outline: none;
+}
+
+li{
+  list-style-type: none;
+  background-color: var(--color-white);
+}
+
+.blue{
+  background-color: var(--color-blue);
+}
+
+.yellow{
+  background-color: var(--color-yellow);
+}
+
+.pink{
+  background-color: var(--color-pink);
+}

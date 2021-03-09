@@ -48,15 +48,14 @@ function detectClick(data){
     const header = document.querySelector('header');
     header.addEventListener('click', function(event){
         const className = event.target.className;
+        clearUlHTML();
         if(className == 'home'){
-            initializePage();
+            renderHTML(data);
         }
         else if(className.includes('clothes')){
-            clearUlHTML();
             renderHTML(data, event.target.classList[1]);
         }
         else if(className.includes('color')){
-            clearUlHTML();
             renderHTML(data, null, event.target.innerHTML.toLowerCase());
         }
     })
